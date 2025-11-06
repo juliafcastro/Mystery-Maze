@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
     <title>Labirinto do Mistério</title>
-</head>
-<body>
-    <div>
-        <p id="historia"></p>
-        <label id="pergunta"> Quer jogar?
-            <input type="text" name="question" id="resposta">
-            <input type="submit" value="Submit">
-        </label>
-        
+  </head>
+  <body>
+    <div class="main">
+      <p id="historia"></p>
+      <p id="pergunta">Você quer jogar?</p>
+
+      <div class="input-btn">
+        <input type="text" name="resposta" id="resposta" />
+
+        <button onclick="pegarValor()" type="submit">Enviar</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
